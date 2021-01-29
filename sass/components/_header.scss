@@ -1,0 +1,151 @@
+#header {
+    background-color: $full-white;
+    border-bottom: 1px solid #ECECEC;
+    
+@media screen and (max-width: 767px) {
+        position: relative;
+ }
+}
+
+.logo {
+    width: 134px;
+    padding: 16px 0px;
+
+@media screen and (min-width: 768px) {
+        padding: 26px 0px;
+ }
+
+@media screen and (min-width: 1200px) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    width: 145px;
+ }
+}
+
+.nav-list {
+    display: flex;
+    font-style: normal;
+    font-weight: 500;
+    align-items: center;
+    letter-spacing: 0.02em;
+    color: $primary-text-color;
+
+@media screen and (max-width: 767px) {
+
+        font-size: 18px;
+        line-height: 1.17;
+ }
+@media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 16px;
+ }
+}
+
+.nav-links, .nav-contacts {
+    font-style: normal;
+    line-height: 2;
+    letter-spacing: 0.02em;
+
+@media screen and (max-width: 767px) {
+    text-align: center;
+ }
+}
+
+.nav-links {
+    @media screen and (max-width: 767px) {
+        padding-top: 32px;
+}
+
+@media screen and (min-width: 768px) {
+        display: flex;
+        padding: 0px;
+        
+        margin-left: auto;
+        font-size: 14px;
+        line-height: 16px;
+ }
+}
+
+.nav-contacts {
+    color: #757575;
+
+@media screen and (min-width: 768px) {
+        margin-left: auto;
+        font-size: 12px;
+        line-height: 14px;
+}
+
+ @media screen and (min-width: 1200px) {
+    display: flex;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+ }
+}
+
+.nav-links li:not(:last-child) {
+
+@media screen and (max-width: 767px) {
+        padding-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+        margin-right: 50px;
+ }
+}
+
+.nav-links li:last-child {
+
+@media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+ }
+}
+
+.nav-contacts li:not(:last-child) {
+@media screen and (max-width: 767px) {
+        padding-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+        padding-bottom: 10px;
+ }
+@media screen and (min-width: 1200px) {
+     margin-right: 50px;
+     padding-bottom: 0px;
+ }
+}
+
+.logo-fix {
+@media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+ }
+}
+
+.nav-contacts .icon {
+    margin-right: 10px;
+}
+
+.current {
+    position: relative;
+    padding-bottom: 8px;
+    color: $accent-button-color;
+
+    @media screen and (max-width: 767px) {
+        display: inline-block;
+}
+
+    @media screen and (min-width: 768px) {
+        padding-bottom: 30px;
+ }
+}
+.current::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $accent-button-color;
+}

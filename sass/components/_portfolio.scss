@@ -1,0 +1,111 @@
+/*Портфолио*/
+.portfolio {
+    padding: 60px 0px;
+
+@media screen and (min-width: 1200px) {
+        padding: 94px 0px;
+ }
+}
+
+.div-portfolio {
+@media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+ }
+}
+
+.portfolio-ul {
+    margin-top: 40px;
+
+@media screen and (min-width: 768px) {
+        margin-top: 14px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+@media screen and (min-width: 1200px) {
+    margin-top: 34px;
+  }
+ }
+}
+
+
+.portfolio-ul li {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 354px;
+    height: auto;
+ }
+}
+
+.portfolio-ul li:nth-child(-n + 8) {
+    @media screen and (max-width: 1199px) {
+    margin-bottom: 30px;
+ }
+}
+
+ .portfolio-ul li:nth-child(-n + 6) {
+@media screen and (min-width: 1200px) {
+    margin-bottom: 30px;
+ }
+}
+
+.portfolio-ul h2 {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+    color: $primary-text-color;
+}
+.portfolio-about p {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: $secondary-text-color;
+}
+
+.portfolio-about {
+    padding: 20px 24px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+        padding-right: 12px;
+    }
+}
+.portfolio-ul li:hover, :focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.overlay {
+    position: relative;
+    overflow: hidden;
+}
+.overlay img {
+    display: block;
+
+@media screen and (max-width: 767px) {
+    width: 100%;
+ }
+}
+.card-overlay {
+    position: absolute;
+    padding: 63px 24px;
+    font-size: 18px;
+    line-height: 28px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    letter-spacing: 0.03em;
+    transform: translateY(100%);
+    transition: $timing-cubic;
+    color: $full-white;
+    background-color: rgba(33, 150, 243, 0.9);
+}
+.portfolio-ul a:hover .card-overlay,
+.portfolio-ul a:focus .card-overlay {
+    opacity: 1;
+    transform: translateY(0);
+}

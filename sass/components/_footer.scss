@@ -1,0 +1,208 @@
+#footer {
+    padding: 60px 0px;
+    background-color: #2F303A;
+
+@media screen and (max-width: 1199px) {
+    text-align: center;
+ }
+}
+
+.nav-footer {
+@media screen and (min-width: 768px) {
+    width: 231px;
+ }
+}
+
+.nav-footer ul li:not(:last-child) {
+    @media screen and (max-width: 767px) {
+        padding-bottom: 8px;
+ }
+}
+.nav-footer li:not(:first-child) {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+
+}
+.adress {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: $full-white;
+}
+
+.logo-two{
+    padding-bottom: 20px;
+}
+
+.flex-footer {
+@media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+ }
+}
+
+.social {
+    @media screen and (max-width: 767px) {
+    margin: 60px 0px;
+ }
+ @media screen and (min-width: 768px) {
+     margin-right: auto;
+ }
+}
+.social h4 {
+    padding-bottom: 20px;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: bold;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $full-white;
+
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+ }
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+}
+.social-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $full-white;
+}
+.social-links li:not(:last-child) {
+    margin-right: 10px;
+}
+.social-icon:hover,
+.social-icon:focus {
+    background-color:  $accent-button-color;
+    transition: $timing-cubic;
+}
+
+.footer-contacts  {
+@media screen and (min-width: 768px) {
+    margin: 0px auto;
+ }
+}
+
+.form-bot {
+@media screen and (max-width: 1199px) {
+    margin: 0px auto;
+ }
+}
+
+.form-bot label {
+    display: block;
+    padding-bottom: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color:$full-white;
+
+    @media screen and (max-width: 1199px) {
+        margin-top: 60px;
+        text-align: center;
+ }
+}
+
+.form-bot input {
+    padding: 16px 15px;
+    width: 100%;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    font-size: 16px;
+    font-style: normal;
+    color: $full-white;
+    background-color: #2F303A;
+    outline: transparent;
+
+@media screen and (max-width: 1199px) {
+       margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+        width: 450px;
+}
+
+@media screen and (min-width: 1200px) {
+     margin-right: 12px;
+     width: 358px;
+ }
+}
+
+.form-bot input::placeholder {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe {
+    display: flex;
+    align-items: center;
+    
+    @media screen and (max-width: 1199px) {
+    flex-direction: column;
+ }
+}
+
+.subbtn-bot {
+    width: 200px;
+    height: 50px;
+    background-color: $accent-button-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    border: none;
+    cursor: pointer;
+    color: $full-white;
+
+@media screen and (max-width: 767px) {
+    margin: 0px auto;
+ }
+}
+.subbtn-bot:hover {
+    width: 200px;
+    height: 50px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    border: none;
+    cursor: pointer;
+    color: $full-white; 
+    background-color: #188CE8;
+    transition: $timing-cubic;
+}
+.subscribe svg {
+    margin-left: 10px;
+}

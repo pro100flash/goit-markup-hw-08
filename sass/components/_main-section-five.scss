@@ -1,0 +1,82 @@
+/*СЕКЦИЯ 5*/
+.section-five {
+    padding: 60px 0px;
+
+@media screen and (min-width: 1200px) {
+        padding: 94px 0px;
+ }
+}
+
+.clients-container {
+@media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+ }
+}
+
+.clients-container h2 {
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 33px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $primary-text-color;
+
+@media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 42px;
+ }
+}
+
+.clients-ul {
+    display: flex;
+    
+@media screen and (max-width: 1199px) {
+    flex-wrap: wrap;
+    justify-content: space-between;
+ }
+}
+
+.clients-ul li:nth-child(-n + 4) {
+@media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+ }
+}
+
+ .clients-ul li:nth-child(-n + 3) {
+@media screen and (max-width: 1199px) {
+    margin-bottom: 30px;
+ }
+}
+
+.clients-ul li:not(:last-child) {
+@media screen and (min-width: 1200px) {
+    margin-right: 30px;
+}
+ }
+
+.clients-icon {
+    display: flex;
+    width: 210px;
+    height: 90px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    color: #AFB1B8;
+
+@media screen and (min-width: 1200px) {
+    width: 170px;
+ }
+}
+
+.clients-icon:hover,
+.clients-icon:focus{
+    color: $accent-button-color;
+    border: 1px solid $accent-button-color;
+    transition: $timing-cubic;
+}
+.icon {
+    fill: currentColor;
+}

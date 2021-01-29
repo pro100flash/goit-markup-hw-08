@@ -1,0 +1,79 @@
+    /*СЕКЦИЯ 2*/
+.section-two {
+@media screen and (max-width: 1199px) {
+        margin: 60px 0px;
+}
+
+@media screen and (min-width: 1200px) {
+        padding-top: 94px;
+ }
+}
+
+.fix-txt {
+@media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+        
+ }
+ @media screen and (max-width: 1199px) {
+        flex-wrap: wrap;
+ }
+}
+
+.fix-txt li {
+@media screen and (min-width: 768px) {
+        width: 354px;
+ }
+
+ @media screen and (min-width: 1200px) {
+         width: 270px;
+ }
+}
+
+.fix-txt li:nth-child(-n + 2) {
+@media screen and (max-width: 1199px) {
+        padding-bottom: 30px;
+ }
+}
+
+.fix-txt h3 {
+        padding-top: 30px;
+        padding-bottom: 10px;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $primary-text-color;
+}
+.fix-txt p {
+        font-size: 14px;
+        line-height: 1.7;
+        letter-spacing: 0.03em;
+        color: $secondary-text-color;
+}
+.list-item::before {
+        display: block;
+        content: "";
+        height: 120px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color:#F5F4FA;
+}
+.icon-antena::before {
+        background-image: url(../images/icons/antenna.svg);
+        background-size: 72px
+}
+.icon-clock::before {
+        background-image: url(../images/icons/clock.svg);
+        background-size: 72px
+}
+.icon-diagram::before {
+        background-image: url(../images/icons/diagram.svg);
+        background-size: 72px
+}
+.icon-astronaut::before {
+        background-image: url(../images/icons/astronaut.svg);
+        background-size: 72px
+}
